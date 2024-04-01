@@ -1,0 +1,26 @@
+/* Navbar.css */
+
+.search-bar {
+    display: flex;
+    align-items: center;
+}
+
+.nav{
+    padding: 15px;
+}
+
+.search-input {
+    border: none;
+    border-radius: 20px; /* Adjust border-radius to create oval shape */
+    padding: 8px 12px; /* Adjust padding as needed */
+    outline: none;
+    width: 200px; /* Adjust width as needed */
+}
+
+.search-button {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    margin-left: -32px; /* Adjust margin-left to position the search button */
+}

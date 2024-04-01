@@ -1,6 +1,9 @@
 .App {
   text-align: center;
+  background-color:#020523;
 }
+/* App.css */
+
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +38,129 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.video-list {
+  display: flex;
+  flex-wrap: wrap; 
+  justify-content:left;
+  margin-left: 250px;
+  margin-right: 0px;
+}
+
+.video-item {
+  width: 23%; 
+  margin-bottom: 10px; 
+  border-radius: 5%; 
+  margin-right: 20px;
+  margin-top: 20px;
+}
+
+.video-details h2 {
+  font-size: 10px; 
+  margin-left: 0px; 
+  color:antiquewhite;
+  margin-top: -10px;
+}  
+
+.video-item {
+  position: relative;
+}
+
+.thumbnail{
+  width: 100%; 
+  margin-bottom: 20px;
+  border-radius: 5%; 
+  margin-right: 20px;
+}
+
+.video-content {
+  position: relative;
+}
+
+.video-content {
+  position: relative; 
+}
+
+.video-details {
+  margin-top: 0px; /* Adjust spacing between thumbnail and video details */
+  color: grey;
+  font-size: 10px;
+}
+
+.video-details p {
+  margin-bottom: 0px; /* Reduce margin between paragraphs */
+  margin-left: -50px;
+  margin-right: 0px;
+}
+.video-list {
+  display: flex; /* Use flexbox to arrange thumbnails in a row */
+  flex-wrap: wrap; /* Allow thumbnails to wrap to the next row */
+  justify-content:left; /* Distribute space between thumbnails */
+}
+
+.video-item {
+  width: 23%;
+  margin-bottom: 10px; /* Add margin at the bottom to separate video items */
+}
+
+.thumbnail {
+  width: 100%; /* Set the width of the thumbnails to fill the available space within the video item */
+  height: auto; /* Maintain aspect ratio */
+}
+
+.main-content {
+  width: 100%; /* Adjust the width as needed */
+  height: 100%; /* Adjust the height as needed */
+}
+
+.thumbnail {
+  width: 100%; /* Adjust the width as needed */
+  height: 100%; /* Maintain aspect ratio */
+  margin-right: 20px;
+}
+
+.pic{
+  border-radius: 50%;
+  width: 25px;
+  height: 25px;
+  position: relative; /* Enable positioning */
+  left: -95px;
+  bottom:30px;
+}
+
+/* Ensure iframe aspect ratio */
+.videos {
+  width: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+  .video-list {
+    margin-left: 10px; /* Adjust margin for smaller screens */
+  }
+  
+  .video-item {
+    width: 45%; /* Adjust width for smaller screens */
+  }
+  
+  .thumbnail,
+  .pic {
+    margin-right: 3px; /* Adjust margin for smaller screens */
+  }
+  
+  .video-details p {
+    margin-left: 0; /* Adjust margin for smaller screens */
+  }
+}
+
+.search-bar {
+  position: relative; /* Ensure relative positioning for absolute icon positioning */
+}
+
+.search-icon {
+  position: absolute; /* Position the icon relative to its container */
+  top: 50%; /* Align the icon vertically */
+  right: 10px; /* Adjust the distance from the right edge of the input */
+  transform: translateY(-50%); /* Center the icon vertically */
+  cursor: pointer; /* Change cursor to pointer on hover */
 }

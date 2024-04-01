@@ -9,7 +9,8 @@ function useVideos() {
   useEffect(() => {
     const fetchVideos = async () => {
       try {
-        const response = await fetch("/api/public/videos");
+        const response = await fetch("/api/public/videos", {
+          method: "GET",});
         if (!response.ok) {
           throw new Error('Failed to fetch videos: ' + response.statusText);
         }
