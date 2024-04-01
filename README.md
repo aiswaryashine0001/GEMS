@@ -1,2 +1,0 @@
-# GEMS
-Task 1
