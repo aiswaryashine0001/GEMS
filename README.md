@@ -1,6 +1,6 @@
-# Project Name
+# GEMS-Task
 
-Welcome to [Project Name]! This project was bootstrapped with Create React App.
+This project was bootstrapped with Create React App.
 
 ## Getting Started
 
